@@ -1,0 +1,172 @@
+<html lang="es-ES">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="resources/css/feat-e.css"> </script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row header">
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                <image class="imgl5 abst" src="resources/img/logo4.png">
+            </div>
+            <div class="col-lg-10 col-md-9 col-sm-9 col-xs-7"> </div>
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-4">
+                <button ng-click="signout()" class="btn btn-success spc">Salir<span class="ion-log-out out"></span></button>
+            </div>
+        </div>
+        <div class="row mid">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="row">
+                    <div class="col-lg-1 col-sm-2 col-md-2 col-xs-2"></div>
+                    <div class="col-lg-11 col-sm-11 col-md-12 col-xs-12">
+                        <div id="editor-n" class="hin"></div>
+                    </div>
+                </div>
+                <div class="row info_u center">
+                    <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12"> </div>
+                </div>
+                <div class="row" id="escritorio">
+                    <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <br> </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-xs-1 col-sm-3"></div>
+                            <div class="col-lg-6 col-md-6 col-xs-9 col-sm-6">
+                                <div class="input-group">
+                                    <input id="editor-dname" type="text" class="form-control" placeholder="Titulo del documento..."> <span class="input-group-btn">
+<button ng-click="create()" class="btn btn-secondary add ion-plus-round" type="button"></button>
+</span> </div>
+                                <div class="row" id="alertdoc1" style="display:none">
+                                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12"> <cite class="an">Ya existe un archivo de texto con ese nombre.</cite> </div>
+                                </div>
+                                <div class="row" id="alertdoc2" style="display:none">
+                                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12"> <cite class="an">Ingrese el nombre del nuevo archivo de texto que desea crear.</cite> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <br> </div>
+                        </div>
+                        <div class="row barr">
+                            <div ng-repeat="document in documents" class="col-lg-1 col-md-1 col-xs-3 col-sm-2 rep center">
+                                <div id="title-document{{document.id_document}}" ng-dblclick="change(document.id_document, document.name_doc)" class="docT">{{titlefix(document.name_doc)}}</div>
+                                <input id="title-change{{document.id_document}}" class="docCh">
+                                <div class="doc ion-document-text" ng-click="open(document.id_document, document.route_doc, document.name_doc, document.id_profiles)"></div> <em class="docT">{{document.create_doc}} </em>
+                                <br><em class="docT">{{document.size_doc}}kb </em>
+                                <div id="equisx" class="equis center" ng-click="delete(document.id_document, document.name_doc)"> <span class="ion-close-round"></span> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="editor" style="display:none">
+                    <div class="col-lg-11 col-sm-11 col-md-11 col-xs-11">
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-3 col-md-3 col-xs-3">
+                                <div class="row">
+                                    <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+                                        <br> </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-0 col-md-1 col-xs-0"></div>
+                                    <div class="col-lg-2 col-sm-3 col-md-3 col-xs-2">
+                                        <button title="Guardar archivo" class="descg ion-android-attach b1e"> </button>
+                                    </div>
+                                    <div class="col-lg-2 col-sm-3 col-md-3 col-xs-2">
+                                        <button id="botontxt" title="Descargar el archivo en tu ordenador" class="descg ion-android-archive b1e"> </button>
+                                    </div>
+                                    <div class="col-lg-2 col-sm-3 col-md-3 col-xs-2">
+                                        <button id="gdt" ng-click="showadminbox()" title="Grupo de trabajo" class="descg ion-android-contacts b1e"> </button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+                                        <br>
+                                        <br> </div>
+                                </div>
+                                <div class="row" id="userbox">
+                                    <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+                                        <div class="part center">Participantes</div>
+                                        <div class="partd ajust" style="text-align: justify">
+                                            <div class="row" ng-repeat="user in users">
+                                                <div class="col-lg-10 col-sm-10 col-xs-10 col-md-10"><em>{{emailfix(user.email_user)}}</em></div>
+                                                <div class="col-lg-2 col-sm-2 col-xs-2 col-md-2"><em>{{setAdm(user.id_profiles)}}</em></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <br> </div>
+                                </div>
+                                <div class="row" id="adminbox" style="display:none">
+                                    <div class="col-lg-12">
+                                        <div class="part">
+                                            <div class="row">
+                                                <div class="col-lg-10">Administre el grupo de trabajo</div>
+                                                <div class="col-lg-1"><span id="xgdt" class="flch">x</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="partd">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="input-group inp1">
+                                                        <input type="email" class="form-control inp" placeholder="Ingrese el email del participante..." id="addinput"> <span class="input-group-btn">
+<button class="btn btn-secondary add ion-search" type="button" ng-click="searchUser()"></button>
+                                            
+</span> </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <br> </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-8"><em id="adminemail"></em></div>
+                                                <div id="adminadd" class="col-lg-1" style="display:none">
+                                                    <button ng-click="addUser()" class="mas ion-plus-round rig"></button>
+                                                </div>
+                                                <div id="admindelete" class="col-lg-1" style="display:none">
+                                                    <button ng-click="removeUser()" class="elim ion-close-round rig"></button>
+                                                </div>
+                                                <!-- <div class="col-lg-1">
+                                                    <button class="perf ion-android-contact rig"></button>
+                                                </div> --></div>
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <br> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-9 col-sm-9 col-md-9 col-xs-9">
+                                <textarea class="ta" id="testArea"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-sm-1 col-md-1 col-xs-1 center">
+                        <div class="row">
+                            <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+                                <br> </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+                                <button id="cambiesc" title="Ir al escritorio" class="descg ion-android-folder-open b1e"> </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row footer center abst">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> ©2017 Feat. </div>
+        </div>
+    </div>
+</body>
+
+</html>

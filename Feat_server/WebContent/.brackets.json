@@ -1,0 +1,14 @@
+{
+    "jscodehints.detectedExclusions": [
+        "C:/Users/USUARIO/Documents/Tesis/Metryc/Metryc1/WebContent/components/CryptoJS/components/sha512-min.js",
+        "C:/Users/USUARIO/Documents/Tesis/Metryc/Metryc1/WebContent/components/CryptoJS/components/sha512.js",
+        "C:/Users/USUARIO/Documents/Tesis/Metryc/Metryc1/WebContent/components/CryptoJS/components/tripledes-min.js",
+        "C:/Users/USUARIO/Documents/Tesis/Metryc/Metryc1/WebContent/components/CryptoJS/components/tripledes.js",
+        "C:/Users/USUARIO/Documents/Tesis/Metryc/Metryc1/WebContent/components/CryptoJS/components/x64-core-min.js",
+        "C:/Users/USUARIO/Documents/Tesis/Metryc/Metryc1/WebContent/components/CryptoJS/components/x64-core.js",
+        "C:/Users/USUARIO/Documents/Tesis/Metryc/Metryc1/WebContent/components/CryptoJS/rollups/aes.js",
+        "C:/Users/USUARIO/Documents/Tesis/Metryc/Metryc1/WebContent/components/CryptoJS/rollups/hmac-md5.js",
+        "C:/Users/USUARIO/Documents/Tesis/Metryc/Metryc1/WebContent/components/CryptoJS/rollups/hmac-ripemd160.js",
+        "C:/Users/USUARIO/Documents/Tesis/Metryc/Metryc1/WebContent/components/CryptoJS/rollups/hmac-sha1.js"
+    ]
+}

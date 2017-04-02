@@ -1,0 +1,250 @@
+.container-fluid {
+    box-sizing: border-box;
+    font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    margin: 0;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-overflow: ellipsis;
+    line-height: 1.5em;
+    text-rendering: optimizeLegibility;
+    font-weight: 300;
+    background: #fff;
+    color: #fff;
+}
+
+.tpagec {
+    height: 3.375em;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+#d1 {
+    background: #92AAC7;
+    background: linear-gradient(to left top, #5cc5ef 0, #344d90 100%);
+}
+
+.abst {
+    position: absolute;
+}
+
+.cono {
+    margin-top: 1.2em;
+    margin-left: 2.3em;
+    color: rgba(255, 255, 255, .8);
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.imglc {
+    top: -2.8em;
+    width: 6.25em;
+    height: 6.25em;
+    cursor: pointer;
+    transition: top .3s ease;
+}
+
+.imglc:hover {
+    top: -2.4em;
+}
+
+.triangulo_inf {
+    width: 0;
+    height: 0;
+    border-left: 1.15em solid transparent;
+    border-right: 1.15em solid transparent;
+    border-top: 1em solid rgba(0, 0, 0, .3);
+}
+
+.pt {
+    margin-top: 0;
+    margin-left: 3.7em;
+}
+
+h2 {
+    color: #fff;
+    font-size: 3.125em;
+    line-height: 1.08em;
+}
+
+.mh2 {
+    margin-top: 4em;
+    margin-bottom: .48em;
+    margin-left: 2em
+}
+
+.pp {
+    margin-top: 3em;
+    margin-bottom: 0;
+    margin-left: 5em;
+    margin-right: 3em;
+    font-size: 1.3em;
+    line-height: 1.4em;
+    word-wrap: break-word;
+}
+
+.mf {
+    transform: translate(0px, 0%);
+    margin-top: 7.5em;
+    bottom: 0;
+}
+
+figure {
+    line-height: 0;
+    margin: 0;
+    box-shadow: rgba(0, 0, 0, .2) 0 0 1.429em 0;
+    border-radius: 0.357em 0.357em 0 0;
+    overflow: hidden;
+    opacity: 1;
+}
+
+.img1 {
+    border: 0;
+    max-width: 100%;
+    height: 75%;
+}
+
+.footer {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: #292d35;
+    color: #787b80;
+    padding: 0.24em 0.4em;
+    bottom: 0;
+    font-size: 90%;
+    box-sizing: border-box;
+}
+
+.center {
+    text-align: center
+}
+
+.h2-si {
+    color: #000;
+    font-size: 2.5em;
+    line-height: 1.08em;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: .75em;
+}
+
+.lb {
+    display: block
+}
+
+.canvas-inner {
+    margin-top: 1.6em;
+    background: #f8f9f9;
+    max-width: 100%;
+    height: 62%;
+    border-radius: 0.357em
+}
+
+.gif1 {
+    height: 100%
+}
+
+.ts {
+    color: #fff;
+    text-align: center;
+    font-size: 2.5em;
+    line-height: 1.35em;
+    font-weight: 300;
+}
+
+.tprin {
+    margin-left: 0;
+    margin-top: .4em;
+    color: rgba(0, 0, 0, .8);
+    font-size: 1.3em;
+    word-wrap: break-word
+}
+
+.tsub {
+    margin-top: .5em;
+    margin-bottom: 1.3em;
+    margin-left: 2em;
+    color: rgba(0, 0, 0, .6);
+    font-size: 1.05em;
+    line-height: 1.4em;
+    word-wrap: break-word;
+}
+
+.feature-icon {
+    width: 3.125em;
+    height: 3.125em;
+    background: #fff;
+    border-radius: 50%;
+    color: #5cc5ef;
+}
+
+.item-icon {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    font-size: 2.5em;
+    line-height: 1.35em;
+}
+
+#d3 {
+    background: linear-gradient(to top, #ffb745 0, #e7552c 100%);
+}
+
+.numbers {
+    font-size: 110%;
+    text-transform: uppercase;
+}
+
+.nmb {
+    overflow: hidden;
+    list-style: none;
+    line-height: 1.2;
+    padding: 0;
+    margin: 0;
+}
+
+.fnmb {
+    display: block;
+    font-size: 500%;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-weight: 300;
+}
+
+.docn {
+    text-align: left;
+}
+
+.din {
+    text-align: right;
+}
+
+.lts {
+    margin-left: 3em;
+    margin-top: 4em;
+    width: 6.3em;
+    height: 2.7824em;
+    cursor: pointer
+}
+
+.fl {
+    word-wrap: break-word;
+    margin-top: 0.5em;
+    margin-left: 3em;
+    font-size: 1.3em;
+    line-height: 1.2em;
+    margin-bottom: 2em;
+}
+
+.regis {
+    padding: .66667em 1.33333em;
+    font-size: 1.2em;
+    line-height: 1.33333em;
+}
+
+.item-icon2 {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    font-size: 2em;
+    cursor: pointer;
+    margin-left: 0;
+    margin-top: 1.7em;
+    color: #fff;
+}

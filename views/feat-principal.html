@@ -1,0 +1,138 @@
+<html lang="es-ES">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="resources/css/feat-p.css">
+<!--     <script src="resources/js/feat.js"></script>
+ --></head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row header largo">
+            <div id="conocenos" class="col-lg-3 col-md-2 col-sm-2 col-xs-2"> <a class="menu__item__button">Conócenos</a></div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 ">
+                <input id="enter-email" class="header_input" type="email" placeholder="Correo electrónico"> </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+                <input id="enter-pass" class="header_input" type="password" minlength="8" maxlength="12" placeholder="Contraseña"> </div>
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 ">
+                <button id="accede" href="intro.html" type="button" class="btn btn-success largo">Accede</button>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><a href="#" class="menu__item__button">¿Has olvidado tu contraseña?</a></div>
+        </div>
+        <div class="row" id="alert4" style="display:none">
+            <div class="col-lg-3 col-md-2 col-sm-2 col-xs-2"></div>
+            <div class="col-lg-9 col-md-10 col-sm-10 col-xs-10"><cite class="an an1">Ingrese un correo elctrónico registrado previamente y su contraseña válida.</cite></div>
+        </div>
+        <div class="row mid">
+            <div class="col-lg-2 col-md-2 col-sm-1 col-xs-1"></div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 dialogo center">
+                <div class="row">
+                    <div class="col-md-4 col-xs-4 col-sm-4">
+                        <image class="imgl-l right" src="resources/img/linea.png">
+                    </div>
+                    <div class="col-md-4 col-xs-4 col-sm-4">
+                        <image class="imgl" src="resources/img/logo4.png">
+                    </div>
+                    <div class="col-md-4 col-xs-4 col-sm-4">
+                        <image class="imgl-l left" src="resources/img/linea.png">
+                    </div>
+                </div>
+                <div class="row center">
+                    <div class="col-md-12 col-xs-12 col-sm-12">
+                        <h1 class="titlef">¿Primera vez en Feat? Regístrate</h1></div>
+                </div>
+                <div class="row" id="r1">
+                    <div class=" col-md-6 col-xs-6 col-sm-6">
+                        <input id="login-name" minlength="3" maxlength="15" class="sm-edit-box" placeholder="Nombre"> </div>
+                    <div class=" col-md-6 col-xs-6 col-sm-6">
+                        <input id="login-lastname" minlength="3" maxlength="15" class="sm-edit-box" placeholder="Apellido"> </div>
+                </div>
+                <div class="row" id="r2">
+                    <div class="col-md-12 col-xs-12 col-sm-12">
+                        <input id="login-username" maxlength="320" type="email" class="sm-edit-box" placeholder="Correo Electrónico"> </div>
+                </div>
+                <div class="row" id="r3" style="display:none">
+                    <div class="col-md-12 col-xs-12 col-sm-12">
+                        <input id="login-pass1" maxlength="12" minlength="8" type="password" class="sm-edit-box" placeholder="Contraseña"> </div>
+                </div>
+                <div class="row" id="r4" style="display:none">
+                    <div class="col-md-12 col-xs-12 col-sm-12">
+                        <input id="login-pass2" maxlength="12" minlength="8" type="password" class="sm-edit-box" placeholder="Repita la contraseña"> </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-xs-12 col-sm-12">
+                        <br> </div>
+                </div>
+                <div class="row" id="r5">
+                    <div class="col-md-12 col-xs-12 col-sm-12">
+                        <button id="r5b" type="button" class="btn btn-danger spc">Regístrate</button>
+                    </div>
+                </div>
+                <div class="row" id="r6" style="display:none">
+                    <div class="col-md-12 col-xs-12 col-sm-12">
+                        <button id="r6b" type="button" class="btn btn-danger spc">Continuar<span class="ion-arrow-right-c flecha"></span></button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                        <br> </div>
+                </div>
+                <div class="row" id="alert1" style="display:none">
+                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12"> <cite class="an">Para el nombre y el apellido, debe ingresar entre 3 a 15 letras, sin espaciado.</cite></div>
+                </div>
+                <div class="row" id="alert2" style="display:none">
+                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12"> <cite class="an">Debe ingresar un correo electrónico válido.</cite> </div>
+                </div>
+                <div class="row" id="alert3" style="display:none">
+                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12"> <cite class="an">La contraseña puede contener letras minúsculas, letras mayúsculas y números, pero no caracteres especiales. La longitud de la contraseña debe ser como mínimo 8 caracteres y como máximo 12. Deben coincidir ambas contraseñas.</cite> </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                        <br> </div>
+                </div>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 middle">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <p class="quotes__quote--important">Feat te permite colaborar en la edición de documentos, estés donde estés y de forma gratuita</p>
+                    </div>
+                </div>
+                <div class="row" id="m1">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <p class="quotes__quote"> <q>Feat permite el manejo de documentos colaborativos de forma sencilla para sus usuarios</q> <cite class="quotes__cite">- Michelle Lombardi</cite> </p>
+                    </div>
+                </div>
+                <div class="row" id="m2" style="display:none">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <p class="quotes__quote"> <q>Feat es sencillo, práctico y novedoso. Cambia la rutina de tu trabajo, ahorra tiempo y comparte</q> <cite class="quotes__cite">- Michelle Lombardi</cite> </p>
+                    </div>
+                </div>
+                <div class="row" id="m3" style="display:none">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <p class="quotes__quote"> <q>Con Feat puedes colaborar en tiempo real, en cualquier lugar y con cualquier grupo de personas en la creación y edición de documentos</q> <cite class="quotes__cite">- Michelle Lombardi</cite> </p>
+                    </div>
+                </div>
+                <div class="row" id="j1">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <p class="quotes__quote"> <q>Feat es una herramienta que facilita el trabajo con documentos colaborativos eficazmente, sin importar dónde te encuentres</q> <cite class="quotes__cite">- Jose Lopez</cite> </p>
+                    </div>
+                </div>
+                <div class="row" id="j2" style="display:none">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <p class="quotes__quote"> <q>La sencillez de Feat reúne, en un mismo lugar, los principios básicos de compartir documentos y trabajabar en equipo</q> <cite class="quotes__cite">- Jose Lopez</cite> </p>
+                    </div>
+                </div>
+                <div class="row" id="j3" style="display:none">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <p class="quotes__quote"> <q>Con Feat puedes invitar a tus amigos a realizar documentos de una manera rápida e interactiva</q> <cite class="quotes__cite">- Jose Lopez</cite> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row footer">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">© 2017 Feat.</div>
+        </div>
+    </div>
+</body>
+
+</html>
